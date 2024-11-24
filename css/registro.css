@@ -1,0 +1,62 @@
+main{
+    display: flex;
+    flex-flow: row;
+}
+.seccionFormulario{
+    display: flex;
+    flex-basis: 70%;
+    align-items: center;
+}
+
+.seccionLogo{
+    flex-basis: 10%;
+}
+
+.seccionLogo img{
+    width: 150%;
+}
+
+#cajaFormulario{
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    flex-basis: 50%;
+    height: 70%;
+}
+
+form{
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+}
+
+input[type="email"], 
+input[type="password"], 
+input[type="tel"],
+input[type="text"],
+#estados{
+    margin-bottom: 3vh;
+    padding: 5px;
+    border: solid 1px #BA8563;
+    background-color: #E8CBA4;
+    border-radius: 4px;
+    padding-right: 45vh;
+}
+
+button{
+    background-color: #D9A17E;
+    border: 1px solid #D9A17E;
+    border-radius: 5px;
+    padding: 10px;
+    color: #4E443C;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+    width: 20vh;
+    cursor: pointer;
+    align-self: center;
+}
+
+h2{
+    margin-bottom: 5vh;
+}

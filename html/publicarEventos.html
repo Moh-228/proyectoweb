@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion de Usuarios | EL BANQUITO</title>
+    <link rel="stylesheet" href="../css/accionEventos.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <nav>
+            <select id="menuadmin" name="menuadmin">
+                <option value=""></option>
+                <option value="admin">Administracion usuarios</option>
+                <option value="calendario">Calendario de eventos</option>
+                <option value="publicar">Publicar nuevos eventos</option>
+                <option value="agendar">Agendar eventos</option>
+                <option value="despublicar">Despublucar eventos</option>
+            </select>
+            <h2>El Banquito</h2>
+            <button><img src="../img/exit.png" width="10%">Cerrar Sesion</button>
+            <img id="usuarioImg" src="../img/usuario.png">
+        </nav>
+        <header>
+            <h2>Publicar nuevos eventos</h2>
+            <img src="../img/logo.jpeg">
+        </header>
+        <main>
+            <div id="cajaTabla">
+
+                <button id="agregarusuario">Agregar Evento</button>
+
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>ID evento</th>
+                            <th>Detalle del evento</th>
+                            <th>Cantidad</th>
+                            <th>Horario</th>
+                            <th>Fecha</th>
+                            <th>Precio Unitario</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Habitos Atomicos: Charla sobre los buenos habitos</td>
+                            <td>2</td>
+                            <td>15:30</td>
+                            <td>20/01/2025-20/02/2025</td>
+                            <td>$200.00</td>
+                            <td>
+                                <button class="accion"><img src="../img/lapiz.png" alt="Editar"></button>
+                                <button class="accion"><img src="../img/plus.png" alt="Editar"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>001</td>
+                            <td>Orgullo y prejuicio: Lectura grupal</td>
+                            <td>1</td>
+                            <td>14:30</td>
+                            <td>20/01/2025-20/02/2025</td>
+                            <td>$50.00</td>
+                            <td>
+                                <button class="accion"><img src="../img/lapiz.png" alt="Editar"></button>
+                                <button class="accion"><img src="../img/plus.png" alt="Editar"></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="tablafooter">
+                    <div class="paginacion">
+                        <button class="anterior">Anterior</button>
+                        <span class="pagina-activa">1</span>
+                        <button class="siguiente">Siguiente</button>
+                    </div>
+                    <button id="agregarusuario">Confirmar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

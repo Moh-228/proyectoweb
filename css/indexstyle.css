@@ -1,0 +1,82 @@
+main{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.seccionIzquierda{
+    display: flex;
+    flex-flow: column;
+    flex-basis: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenedorFormulario img{
+    width: 70%;
+    margin-bottom: 1vh;
+}
+
+#contenedorFormulario{
+    display: flex;
+    flex-flow: column;
+    flex-basis: 80%;
+    height: 90%;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+}
+
+.seccionDerecha{
+    display: flex;
+    flex-flow: row;
+    flex-basis: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#cajaImagen{
+    flex-basis: 70%;
+    height: 70%;
+    background-image: url(../img/imagenlogin.jpg);
+    background-position: top;
+    background-size: cover;
+    border: solid 2px black;
+    box-shadow: 0px 3px 20px 0px black;
+}
+
+h2{
+    margin-bottom: 2vh;
+}
+
+input[type="email"], input[type="password"]{
+    margin-bottom: 3vh;
+    padding: 5px;
+    border: solid 1px #BA8563;
+    background-color: #E8CBA4;
+    border-radius: 4px;
+    padding-right: 45vh;
+}
+
+button{
+    background-color: #D9A17E;
+    border: 1px solid #D9A17E;
+    border-radius: 5px;
+    padding: 10px;
+    color: #4E443C;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    cursor: pointer;
+}
+
+p{
+    font-size: 15px;
+    color: #4E443C;
+}
+a{
+    color: #4E443C;
+}

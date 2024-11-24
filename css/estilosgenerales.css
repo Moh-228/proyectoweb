@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+main{
+    height: 100vh;
+    background: linear-gradient(to bottom, #E8E3E1, #E8CBA4);
+    color: #4E443C;
+}

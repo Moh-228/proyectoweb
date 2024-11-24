@@ -1,0 +1,172 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #C6B49C 0%, #D4C6B5 24.27%, #E8E3E1 88.19%, #E8CBA4 96.84%);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #5a3b2c;
+}
+
+nav select {
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #D9A17E;
+    color: #ffffff;
+    width: 20px;
+    margin-left: 20px;
+}
+
+nav button {
+    display: flex;
+    align-items: center;
+    background-color: #E8CBA4;
+    color: #5a3b2c;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+
+nav img {
+    background-color: #744728;
+    width: 20px;
+    height: 20px;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+}
+
+header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #5a3b2c;
+    margin: 10px 0;
+}
+
+header img {
+    width: 15%;
+}
+
+#agregarusuario{
+    background-color: #dfb88a;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+/* Contenedor principal */
+#cajaTabla{
+    display: flex;
+    flex-flow: column;
+    width: 1500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tabla thead {
+    color: black;
+}
+
+.tabla thead tr{
+    background-color: E8CBA4;
+}
+
+.tabla th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.tabla tbody tr {
+    border-bottom: 1px solid black;
+    background-color: #E8E3E1;
+}
+
+.tabla td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.accion {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.accion img {
+    width: 20px;
+    height: 20px;
+}
+
+.tablafooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.paginacion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.paginacion button {
+    background-color: #dfb88a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.pagina-activa {
+    background-color: #E8E3E1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

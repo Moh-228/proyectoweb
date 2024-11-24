@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion de Usuarios | EL BANQUITO</title>
+    <link rel="stylesheet" href="../css/calendarioadmin.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <nav>
+            <select id="menuadmin" name="menuadmin">
+                <option value=""></option>
+                <option value="admin">Administracion usuarios</option>
+                <option value="calendario">Calendario de eventos</option>
+                <option value="publicar">Publicar nuevos eventos</option>
+                <option value="agendar">Agendar eventos</option>
+                <option value="despublicar">Despublucar eventos</option>
+            </select>
+            <h2>El Banquito</h2>
+            <button><img src="../img/exit.png" width="10%">Cerrar Sesion</button>
+            <img id="usuarioImg" src="../img/usuario.png">
+        </nav>
+        <header>
+            <h2>Calendario de Eventos</h2>
+            <img src="../img/logo.jpeg">
+        </header>
+        <main>
+            <div id="cajaCalendario">
+                <div id="checks">
+                    <input type="checkbox" name="Fecha" id="fecha">
+                    <label for="fecha">Fecha</label>
+
+                    <input type="checkbox" name="Fecha" id="fecha">
+                    <label for="fecha">Nombre del evento</label>
+
+                    <button class="lupaboton"><img id="lupa" src="../img/lupa.png"></button>
+                </div>
+
+                <div data-events-calendar-app data-project-id="proj_gszg1ZS9BF9yCJYH17kKi"></div>
+                <script type="text/javascript" src="//dist.eventscalendar.co/embed.js"></script>
+            </div>
+            <div id="cajaTabla">
+                <label>ID del evento</label>
+                <div>
+                    <input type="text" value="Ingresa el nombre del evento">
+                    <button id="agregarusuario">Buscar</button>
+                </div>
+
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>ID evento</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0011</td>
+                            <td>Habitos Atomicos: Charla sobre los buenos habitos</td>
+                        </tr>
+                        <tr>
+                            <td>0065</td>
+                            <td>Nombre del evento: Orgullos y prejuicio: Lectura grupal</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="tablafooter">
+                    <div class="paginacion">
+                        <button class="anterior">Anterior</button>
+                        <span class="pagina-activa">1</span>
+                        <button class="siguiente">Siguiente</button>
+                    </div>
+                </div>
+                <div>
+                <button id="agregarusuario">Agendar</button>
+                <button id="agregarusuario">Guardar</button>
+            </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion de Usuarios | EL BANQUITO</title>
+    <link rel="stylesheet" href="../css/estilosadminusuarios.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <nav>
+            <select id="menuadmin" name="menuadmin">
+                <option value=""></option>
+                <option value="admin">Administracion usuarios</option>
+                <option value="calendario">Calendario de eventos</option>
+                <option value="publicar">Publicar nuevos eventos</option>
+                <option value="agendar">Agendar eventos</option>
+                <option value="despublicar">Despublucar eventos</option>
+            </select>
+            <h2>El Banquito</h2>
+            <button><img src="../img/exit.png" width="10%">Cerrar Sesion</button>
+            <img id="usuarioImg" src="../img/usuario.png">
+        </nav>
+        <header>
+            <h2>Lista de Usuaios</h2>
+            <img src="../img/logo.jpeg">
+        </header>
+        <main>
+            <div id="cajaTabla">
+
+                <button id="agregarusuario">Agregar Usuaio</button>
+
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Teléfono</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>user</td>
+                            <td>admin@gmail.com</td>
+                            <td>555555667</td>
+                            <td>Administrador</td>
+                            <td>
+                                <button class="accion"><img src="../img/lapiz.png" alt="Editar"></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="tablafooter">
+                    <span>1 resultado</span>
+                    <div class="paginacion">
+                        <button class="anterior">Anterior</button>
+                        <span class="pagina-activa">1</span>
+                        <button class="siguiente">Siguiente</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
